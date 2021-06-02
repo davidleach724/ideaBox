@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <section class="container-left">
+        <h1 class="heading">IdeaBox</h1>
+        <div class="starred-ideas-box">
+          <p class="starred-ideas">Filter Starred Ideas</p>
+          <button class="starred-ideas-button">Show Starred Ideas</button>
+        </div>
+      </section>
+      <form class="container-top">
+        <div class="title-area">
+          <label for="title">Title</label>
+          <input type="text" id="userTitle" value="title" required>
+        </div>
+        <div class="body-area">
+          <label for="body">Body</label>
+          <input type="text" id="userBody" value="body" required>
+        </div>
+        <button class="save-button">Save</button>
+        <div class="search-ideas-box">
+          <img src="assets/search.svg" alt="search button">
+          <input class="search-field" type="text" id="searchField" value="search" required placeholder="Search Ideas">
+        </div>
+      </form>
+      <section class="container-bottom">
+        <article class="idea-card">
+          <nav class="idea-nav">
+            <img src="assets/star-active.svg" alt="favorite idea star">
+            <img src="assets/delete.svg" alt="delete idea icon">
+          </nav>
+          <h2 class="idea-title">Idea title</h2>
+          <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
+          <footer class="idea-comment">
+            <img src="assets/comment.svg" alt="add comment button">
+            <label class="comment">Comment</label>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <script type="text/javascript" src="Idea.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
