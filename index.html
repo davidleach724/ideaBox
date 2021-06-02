@@ -9,39 +9,39 @@
   </head>
   <body>
     <main>
-      <section>
-        <h1>IdeaBox</h1>
-        <div>
-          <p>Filter Starred Ideas</p>
-          <button>Show Starred Ideas</button>
+      <section class="container-left">
+        <h1 class="heading">IdeaBox</h1>
+        <div class="starred-ideas-box">
+          <p class="starred-ideas">Filter Starred Ideas</p>
+          <button class="starred-ideas-button">Show Starred Ideas</button>
         </div>
       </section>
-      <form>
-        <div>
-          <label>Title</label>
-          <input>
+      <form class="container-top">
+        <div class="title-area">
+          <label for="title">Title</label>
+          <input type="text" id="userTitle" value="title" required>
         </div>
-        <div>
-          <label>Body</label>
-          <input>
+        <div class="body-area">
+          <label for="body">Body</label>
+          <input type="text" id="userBody" value="body" required>
         </div>
-        <button>Save</button>
-        <div>
+        <button class="save-button">Save</button>
+        <div class="search-ideas-box">
           <img src="" alt="">
-          <input placeholder="Search Ideas">
+          <input class="search-field" type="text" id="searchField" value="search" required placeholder="Search Ideas">
         </div>
       </form>
-      <section>
-        <article>
-          <nav>
+      <section class="container-bottom">
+        <article class="idea-card">
+          <nav class="idea-nav">
             <img src="" alt="">
             <img src="" alt="">
           </nav>
-          <h2>Idea title</h2>
-          <p>Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-          <footer>
+          <h2 class="idea-title">Idea title</h2>
+          <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
+          <footer class="idea-comment">
             <img src="" alt="">
-            <p>Comment</p>
+            <label class="comment">Comment</label>
           </footer>
         </article>
       </section>
