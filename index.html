@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -17,32 +17,35 @@
           <button class="starred-ideas-button">Show Starred Ideas</button>
         </div>
       </section>
+
       <section class="container-right">
+
         <form class="container-top">
           <div class="title-area">
             <label for="title">Title</label>
-            <input type="text" id="userTitle" value="title" required>
+            <textarea class="user-title" type="text" id="userTitle" required autocomplete="off"></textarea>
           </div>
           <div class="body-area">
             <label for="body">Body</label>
-            <input type="text" id="userBody" value="body" required>
+            <textarea class ="user-body" type="text" id="userBody" required autocomplete="off"></textarea>
           </div>
           <button class="save-button">Save</button>
           <div class="search-ideas-box">
-            <!-- <img class="search-img" src="assets/search.svg" alt="search button"> -->
-            <input class="search-field" type="text" id="searchField" value="search" required placeholder="Search Ideas">
+            <img class="search-img" src="assets/search.svg" alt="search button">
+            <input class="search-field" type="text" id="searchField" required placeholder="Search Ideas" autocomplete="off">
           </div>
         </form>
+
         <section class="container-bottom">
           <article class="idea-card">
             <nav class="idea-nav">
-              <!-- <img class="favorite-img" src="assets/star-active.svg" alt="favorite idea star"> -->
-              <!-- <img class="delete-img" src="assets/delete.svg" alt="delete idea icon"> -->
+              <!-- <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star"> -->
+              <!-- <img class="card-icon" src="assets/delete.svg" alt="delete idea icon"> -->
             </nav>
             <h2 class="idea-title">Idea title</h2>
             <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
             <footer class="idea-comment">
-              <!-- <img class="add-comment-img" src="assets/comment.svg" alt="add comment button"> -->
+              <!-- <img class="card-icon" src="assets/comment.svg" alt="add comment button"> -->
               <label class="comment">Comment</label>
             </footer>
           </article>
