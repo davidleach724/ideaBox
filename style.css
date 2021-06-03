@@ -1,5 +1,4 @@
 * {
-  /* border: .10em solid green; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,7 +14,7 @@ main {
 /* LEFT SIDEBAR */
 .container-left {
   background: #1F1F3D;
-  height: 140vh;
+  height: 60em;
   width: 20vw;
 }
 
@@ -67,7 +66,7 @@ main {
   justify-content: space-evenly;
   align-items: center;
   background: #A9AAD2;
-  height: 60vh;
+  height: 24em;
 }
 
 .title-area,
@@ -127,26 +126,22 @@ textarea {
   width: 100%;
 }
 
-* {
-  /* border: .15em solid green; */
-}
-
 /* BOTTOM CONTAINER */
 .container-bottom {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   background: #EAEAF4;
-  height: 80vh;
+  height: 36em;
 }
 
 .idea-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 36vh;
-  width: 18vw;
-  margin: 1em;
+  height: 15em;
+  width: 14em;
+  margin-top: 1.5em;
 }
 
 .idea-nav {
@@ -157,7 +152,6 @@ textarea {
   height: 12.5%;
   width: 100%;
   margin: 0;
-
 }
 
 .idea-content {
@@ -174,6 +168,7 @@ textarea {
 .idea-body {
   margin: 0;
   font-size: 15px;
+  /* overflow: scroll; */
 }
 
 .idea-comment {
