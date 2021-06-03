@@ -17,7 +17,6 @@
           <button class="starred-ideas-button">Show Starred Ideas</button>
         </div>
       </section>
-
       <section class="container-right">
 
         <form class="container-top">
@@ -32,21 +31,22 @@
           <button class="save-button">Save</button>
           <div class="search-ideas-box">
             <img class="search-img" src="assets/search.svg" alt="search button">
-            <input class="search-field" type="text" id="searchField" required placeholder="Search Ideas" autocomplete="off">
+            <input class="search-field" type="text" id="searchField" required placeholder="Search Ideas" autocomplete="off" maxlength="40">
           </div>
         </form>
-
         <section class="container-bottom">
           <article class="idea-card">
             <nav class="idea-nav">
-              <!-- <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star"> -->
-              <!-- <img class="card-icon" src="assets/delete.svg" alt="delete idea icon"> -->
+              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
+              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
             </nav>
-            <h2 class="idea-title">Idea title</h2>
-            <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
+            <div class="idea-content">
+              <h2 class="idea-title">Idea title</h2>
+              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
+            </div>
             <footer class="idea-comment">
-              <!-- <img class="card-icon" src="assets/comment.svg" alt="add comment button"> -->
-              <label class="comment">Comment</label>
+              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
+              <label>Comment</label>
             </footer>
           </article>
         </section>
