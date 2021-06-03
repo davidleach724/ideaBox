@@ -80,21 +80,20 @@ main {
   font-weight: 700;
 }
 
-
-.user-title {
+textarea {
   border: .15em #5356A4 solid;
   border-radius: .25em;
   outline: none;
-  height: 3em;
   margin-top: .25em;
+  resize: none;
+}
+
+.user-title {
+  height: 3em;
 }
 
 .user-body {
-  border: .15em #5356A4 solid;
-  border-radius: .25em;
-  outline: none;
   height: 6em;
-  margin-top: .25em;
 }
 
 .save-button {
@@ -128,21 +127,69 @@ main {
   width: 100%;
 }
 
-
+* {
+  /* border: .15em solid green; */
+}
 
 /* BOTTOM CONTAINER */
 .container-bottom {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
   background: #EAEAF4;
   height: 80vh;
+}
+
+.idea-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 36vh;
+  width: 18vw;
+  margin: 1em;
+}
+
+.idea-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: .15em solid #1F1F3D;
+  background: #1F1F3D;
+  height: 12.5%;
+  width: 100%;
+  margin: 0;
 
 }
 
+.idea-content {
+  border: .15em solid #1F1F3D;
+  background: #ffffff;
+  padding: .5em;
+  height: 100%;
+}
 
+.idea-title {
+  font-size: 15px;
+}
 
+.idea-body {
+  margin: 0;
+  font-size: 15px;
+}
 
-
+.idea-comment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: .15em solid #1F1F3D;
+  border-top: none;
+  background: #5356A4;
+  color: #ffffff;
+  margin: 0;
+  font-size: 15px;
+}
 
 .card-icon {
-  height: 10em;
-  width: 10em;
+  height: 1.75em;
+  width: 1.75em;
+  padding: .10em;
 }
