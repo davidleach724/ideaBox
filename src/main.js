@@ -20,8 +20,8 @@ function generateIdeaCard() {
   var newCard = new Idea(inputTitle.value, inputDescription.value);
   ideaCardList.push(newCard);
 
-
   renderIdeaCard();
+  clearInputFields();
 }
 
 function renderIdeaCard() {
@@ -44,6 +44,11 @@ function renderIdeaCard() {
     </footer>
   </article>`;
   }
+}
+
+function clearInputFields() {
+  inputTitle.value = '';
+  inputDescription.value = '';
 }
 
 /* Pseudocode
