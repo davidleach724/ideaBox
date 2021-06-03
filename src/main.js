@@ -21,26 +21,29 @@ function generateIdeaCard() {
   ideaCardList.push(newCard);
 
 
-  ideaCard.innerHTML += `<article class="idea-card">
+  renderIdeaCard();
+}
+
+function renderIdeaCard() {
+
+  ideaCard.innerHTML = '';
+
+  for(var i=0; i < ideaCardList.length; i++) {
+  ideaCard.innerHTML += `<article id="${ideaCardList[i].id}" class="idea-card">
     <nav class="idea-nav">
       <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
       <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
     </nav>
     <div class="idea-content">
-      <h2 class="idea-title">${newCard.title}</h2>
-      <p class="idea-body">${newCard.body}</p>
+      <h2 class="idea-title">${ideaCardList[i].title}</h2>
+      <p class="idea-body">${ideaCardList[i].body}</p>
     </div>
     <footer class="idea-comment">
       <img class="card-icon" src="assets/comment.svg" alt="add comment button">
       <label>Comment</label>
     </footer>
   </article>`;
-
-  updateIdeaSection();
-}
-
-function updateIdeaSection() {
-
+  }
 }
 
 /* Pseudocode
