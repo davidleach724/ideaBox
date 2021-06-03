@@ -1,9 +1,47 @@
 //queryselectors
+//inputs
+var inputTitle = document.querySelector('#userTitle');
+var inputDescription = document.querySelector('#userBody');
+
+var ideaCard = document.querySelector('#ideaCard');
+
+//buttons
+var buttonSave = document.querySelector('#saveButton');
+
 
 //event listeners
+buttonSave.addEventListener('click', generateIdeaCard);
+
+//global variables
+var ideaCardList = [];
 
 //functions
+function generateIdeaCard() {
+  var newCard = new Idea(inputTitle.value, inputDescription.value);
+  ideaCardList.push(newCard);
 
+
+  ideaCard.innerHTML += `<article class="idea-card">
+    <nav class="idea-nav">
+      <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
+      <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
+    </nav>
+    <div class="idea-content">
+      <h2 class="idea-title">${newCard.title}</h2>
+      <p class="idea-body">${newCard.body}</p>
+    </div>
+    <footer class="idea-comment">
+      <img class="card-icon" src="assets/comment.svg" alt="add comment button">
+      <label>Comment</label>
+    </footer>
+  </article>`;
+
+  updateIdeaSection();
+}
+
+function updateIdeaSection() {
+
+}
 
 /* Pseudocode
 Task 1:
