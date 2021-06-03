@@ -7,12 +7,12 @@ motivation and context.
 - [ ] New feature (non-breaking change which adds functionality)
 - [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
 
-# How Has This Been Tested?
+## How Has This Been Tested?
 - [ ] open index.html
 - [ ] console.log()
 - [ ] dev tools
 
-# Checklist:
+## Checklist:
 - [ ] My code follows the style guidelines of this project
 - [ ] I have performed a self-review of my own code
 - [ ] I have commented my code, particularly in hard-to-understand areas
