@@ -11,12 +11,18 @@ var buttonSave = document.querySelector('#saveButton');
 
 //event listeners
 buttonSave.addEventListener('click', generateIdeaCard);
+//buttonSave.addEventListener('mouseover', changeButtonColor);
 
 //global variables
 var ideaCardList = [];
 
 //functions
 function generateIdeaCard() {
+  if(!inputTitle.value || !inputDescription.value) {
+    // buttonSave.disabled = true;
+    return
+  }
+
   var newCard = new Idea(inputTitle.value, inputDescription.value);
   ideaCardList.push(newCard);
 
@@ -50,6 +56,13 @@ function clearInputFields() {
   inputTitle.value = '';
   inputDescription.value = '';
 }
+
+
+// function changeButtonColor() {
+//   console.log('you hovered');
+//   buttonSave.classList.remove('.save-button')
+//   buttonSave.classList.add('.save-button2');
+// }
 
 /* Pseudocode
 Task 1:
