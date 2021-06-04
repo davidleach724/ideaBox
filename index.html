@@ -27,101 +27,18 @@
             <label for="body">Body</label>
             <textarea class ="user-body" type="text" id="userBody" required autocomplete="off"></textarea>
           </div>
-          <button class="save-button">Save</button>
+          <button id="saveButton" class="save-button">Save</button>
           <div class="search-ideas-box">
             <img class="search-img" src="assets/search.svg" alt="search button">
             <input class="search-field" type="text" id="searchField" required placeholder="Search Ideas" autocomplete="off" maxlength="40">
           </div>
         </form>
-        <section class="container-bottom">
-          <article class="idea-card">
-            <nav class="idea-nav">
-              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
-            </nav>
-            <div class="idea-content">
-              <h2 class="idea-title">Idea title</h2>
-              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-            </div>
-            <footer class="idea-comment">
-              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
-              <label>Comment</label>
-            </footer>
-          </article>
-          <article class="idea-card">
-            <nav class="idea-nav">
-              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
-            </nav>
-            <div class="idea-content">
-              <h2 class="idea-title">Idea title</h2>
-              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-            </div>
-            <footer class="idea-comment">
-              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
-              <label>Comment</label>
-            </footer>
-          </article>
-          <article class="idea-card">
-            <nav class="idea-nav">
-              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
-            </nav>
-            <div class="idea-content">
-              <h2 class="idea-title">Idea title</h2>
-              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-            </div>
-            <footer class="idea-comment">
-              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
-              <label>Comment</label>
-            </footer>
-          </article>
-          <article class="idea-card">
-            <nav class="idea-nav">
-              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
-            </nav>
-            <div class="idea-content">
-              <h2 class="idea-title">Idea title</h2>
-              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-            </div>
-            <footer class="idea-comment">
-              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
-              <label>Comment</label>
-            </footer>
-          </article>
-          <article class="idea-card">
-            <nav class="idea-nav">
-              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
-            </nav>
-            <div class="idea-content">
-              <h2 class="idea-title">Idea title</h2>
-              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-            </div>
-            <footer class="idea-comment">
-              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
-              <label>Comment</label>
-            </footer>
-          </article>
-          <article class="idea-card">
-            <nav class="idea-nav">
-              <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-              <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
-            </nav>
-            <div class="idea-content">
-              <h2 class="idea-title">Idea title</h2>
-              <p class="idea-body">Idea body. Don't ever play yourself. Every chance I get, I water the plants, Lion! Cloth talk.</p>
-            </div>
-            <footer class="idea-comment">
-              <img class="card-icon" src="assets/comment.svg" alt="add comment button">
-              <label>Comment</label>
-            </footer>
-          </article>
+        <section id="ideaCard" class="container-bottom">
+          <!-- This is where user cards are generated -->
         </section>
       </section>
     </main>
-    <script type="text/javascript" src="Idea.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="src/Idea.js"></script>
+    <script type="text/javascript" src="src/main.js"></script>
   </body>
 </html>

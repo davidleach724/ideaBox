@@ -96,13 +96,17 @@ textarea {
 }
 
 .save-button {
-  background: #1F1F3D;
+  background: #5356A4;
   width: 45%;
   color: #EAEAf4;
   border: .15em #5356A4 solid;
   padding: .5em;
   border-radius: .25em;
   font-size: 15px;
+}
+
+.save-button-2 {
+  background: #1F1F3D;
 }
 
 .search-ideas-box {
