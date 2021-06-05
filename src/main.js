@@ -68,6 +68,31 @@ function clearInputFields() {
   buttonValidity();
 }
 
+// task1 >> when user clicks delete button on idea card, the card is permanently removed from view
+  // add addEventListener 'click' on ideaCard
+  // create a function deleteIdeaCard
+    // target the delete icon img
+    // if clicked, remove card
+      // loop through ideaCardList
+      // if ID is the target, splice that shit
+    // then update the DOM, call renderIdeaCard() ?
+
+
+// task 2 >> when user clicks star button on the idea card, if outlined/not favorited, button is not filled/favorited
+  // create a function updateFavorites() // updateIdea
+    // target the favorites icon img
+    // if clicked, change img
+      // this.star is now true
+      // src assigned to other img
+
+// task 3 >> when user clicks star button on the idea card, if filled/favorited, button is now outlined/not favorited
+  // potentially toggle() ???
+
+// task 4>> can't see page reload
+
+
+
+
 
 /*
 Edge cases
