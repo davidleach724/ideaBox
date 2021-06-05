@@ -103,10 +103,12 @@ textarea {
   padding: .5em;
   border-radius: .25em;
   font-size: 15px;
+  cursor: not-allowed;
 }
 
 .save-button-2 {
   background: #1F1F3D;
+  cursor: default;
 }
 
 .search-ideas-box {

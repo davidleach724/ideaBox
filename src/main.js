@@ -2,7 +2,7 @@
 //inputs
 var inputTitle = document.querySelector('#userTitle');
 var inputDescription = document.querySelector('#userBody');
-
+var ideaBox = document.querySelector('.container-top');
 var ideaCard = document.querySelector('#ideaCard');
 
 //buttons
@@ -10,18 +10,26 @@ var buttonSave = document.querySelector('#saveButton');
 
 
 //event listeners
-buttonSave.addEventListener('click', generateIdeaCard);
-//buttonSave.addEventListener('mouseover', changeButtonColor);
+buttonSave.addEventListener('click', function(event) {
+  generateIdeaCard(event);
+});
+ideaBox.addEventListener('keyup', buttonValidity);
 
 //global variables
 var ideaCardList = [];
 
 //functions
-function generateIdeaCard() {
+function buttonValidity() {
   if(!inputTitle.value || !inputDescription.value) {
-    // buttonSave.disabled = true;
-    return
+    buttonSave.disabled = true;
+  } else if (inputTitle.value && inputDescription.value) {
+    buttonSave.classList.add('save-button-2');
+    buttonSave.disabled = false;
   }
+}
+
+function generateIdeaCard(event) {
+  event.preventDefault();
 
   var newCard = new Idea(inputTitle.value, inputDescription.value);
   ideaCardList.push(newCard);
@@ -55,14 +63,11 @@ function renderIdeaCard() {
 function clearInputFields() {
   inputTitle.value = '';
   inputDescription.value = '';
+  buttonSave.classList.remove('save-button-2');
+
+  buttonValidity();
 }
 
-
-// function changeButtonColor() {
-//   console.log('you hovered');
-//   buttonSave.classList.remove('.save-button')
-//   buttonSave.classList.add('.save-button2');
-// }
 
 /* Pseudocode
 Task 1:
