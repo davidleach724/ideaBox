@@ -45,8 +45,8 @@ function renderIdeaCard() {
   for(var i=0; i < ideaCardList.length; i++) {
   ideaCard.innerHTML += `<article id="${ideaCardList[i].id}" class="idea-card">
     <nav class="idea-nav">
-      <img class="card-icon" src="assets/star-active.svg" alt="favorite idea star">
-      <img class="card-icon" src="assets/delete.svg" alt="delete idea icon">
+      <img class="card-icon" id="favoriteIcon" src="${ideaCardList[i].image}" alt="favorite idea star">
+      <img class="card-icon" id="deleteIcon" src="assets/delete.svg" alt="delete idea icon">
     </nav>
     <div class="idea-content">
       <h2 class="idea-title">${ideaCardList[i].title}</h2>
@@ -66,6 +66,34 @@ function clearInputFields() {
   buttonSave.classList.remove('save-button-2');
 
   buttonValidity();
+}
+
+ideaCard.addEventListener('click', function(event) {
+  favoriteIdeaCard(event);
+  deleteIdeaCard(event);
+});
+
+function deleteIdeaCard(event) {
+  var closestIdea = event.target.closest('article');
+  if (event.target.id === 'deleteIcon') {
+    for (var i = 0; i < ideaCardList.length; i++) {
+      if (ideaCardList[i].id === Number(closestIdea.id)) {
+        ideaCardList.splice(i, 1);
+      }
+    }
+  }
+  renderIdeaCard();
+}
+
+function favoriteIdeaCard(event) {
+  var closestIdea = event.target.closest('article');
+  if (event.target.id === 'favoriteIcon');
+    for (var i = 0; i < ideaCardList.length; i++) {
+      if (ideaCardList[i].id === Number(closestIdea.id)) {
+        console.log('where you', ideaCardList[i]);
+        ideaCardList[i].updateIdea();
+      }
+    }
 }
 
 

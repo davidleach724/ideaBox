@@ -4,6 +4,7 @@ class Idea {
     this.title = title;
     this.body = body;
     this.star = false;
+    this.image = 'assets/star.svg';
   }
 
   saveToStorage() {
@@ -15,6 +16,12 @@ class Idea {
   }
 
   updateIdea() {
-  //should be able to update the idea’s title, body, or starred state
+    if (this.star === false) {
+      this.star = true;
+      this.image = 'assets/star-active.svg'
+    } else if (this.star === true) {
+      this.star = false;
+      this.image = 'assets/star.svg';
+    }
   }
 }
