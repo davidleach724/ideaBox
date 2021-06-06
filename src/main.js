@@ -116,12 +116,13 @@ function searchIdea() {
 }
 
 function retrieveFromStorage() {
-  // for (var i = 0; i < localStorage.length; i++) {
-    console.log(localStorage);
-    var cardDeets = JSON.parse(cardId);
-    localStorage.getItem(cardDeets);
-    ideaCardListMain.push(cardDeets);
-  // }
+  var keys = Object.keys(localStorage);
+
+  for (var i=0; i < keys.length; i++) {
+    var cardDeets = localStorage.getItem(keys[i]);
+    var cardDeetsObj = JSON.parse(cardDeets);
+    ideaCardListMain.push(cardDeetsObj);
+  }
   renderIdeaCard(ideaCardListMain);
 }
 
