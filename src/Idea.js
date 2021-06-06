@@ -8,7 +8,9 @@ class Idea {
   }
 
   saveToStorage() {
-  //should only have one job which is to save the instance to storage
+    var cardId = this.id;
+    var cardDeets = JSON.stringify(this);
+    localStorage.setItem(cardId, cardDeets);
   }
 
   deleteFromStorage() {

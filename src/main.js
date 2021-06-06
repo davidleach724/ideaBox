@@ -42,6 +42,7 @@ function generateIdeaCard(event) {
 
   var newCard = new Idea(inputTitle.value, inputDescription.value);
   ideaCardListMain.push(newCard);
+  newCard.saveToStorage();
 
   renderIdeaCard(ideaCardListMain);
   clearInputFields();
