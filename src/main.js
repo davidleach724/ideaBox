@@ -103,7 +103,8 @@ function favoriteIdeaCard(event) {
 
 function searchIdea() {
   var inputSearch = inputSearchField.value;
-  var filteredIdeaCards = []
+  var filteredIdeaCards = [];
+  console.log(inputSearch);
 
   for (var i=0; i < ideaCardListMain.length; i++) {
     if(ideaCardListMain[i].title.includes(inputSearch) || ideaCardListMain[i].body.includes(inputSearch)) {
