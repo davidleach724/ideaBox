@@ -22,9 +22,7 @@ ideaCard.addEventListener('click', function(event) {
   deleteIdeaCard(event);
 });
 
-inputSearchField.addEventListener('keyup', function(event) {
-  searchIdea(event);
-});
+inputSearchField.addEventListener('keyup', searchIdea);
 
 //global variables
 var ideaCardListMain = [];
@@ -103,7 +101,7 @@ function favoriteIdeaCard(event) {
   }
 }
 
-function searchIdea(event) {
+function searchIdea() {
   var inputSearch = inputSearchField.value;
   var filteredIdeaCards = []
 
