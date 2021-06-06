@@ -85,6 +85,7 @@ function deleteIdeaCard(event) {
   if (event.target.id === 'deleteIcon') {
     for (var i = 0; i < ideaCardListMain.length; i++) {
       if (ideaCardListMain[i].id === Number(closestIdea.id)) {
+        localStorage.removeItem(ideaCardListMain[i].id);
         ideaCardListMain.splice(i, 1);
       }
     }
