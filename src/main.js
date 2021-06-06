@@ -42,8 +42,10 @@ function generateIdeaCard(event) {
   event.preventDefault();
 
   var newCard = new Idea(inputTitle.value, inputDescription.value);
+
   ideaCardListMain.push(newCard);
   newCard.saveToStorage();
+
   renderIdeaCard(ideaCardListMain);
   clearInputFields();
 }
@@ -84,6 +86,7 @@ function deleteIdeaCard(event) {
   if (event.target.id === 'deleteIcon') {
     for (var i = 0; i < ideaCardListMain.length; i++) {
       if (ideaCardListMain[i].id === Number(closestIdea.id)) {
+        console.log(ideaCardListMain[i]);
         ideaCardListMain[i].deleteFromStorage();
         ideaCardListMain.splice(i, 1);
       }
@@ -121,7 +124,8 @@ function retrieveFromStorage() {
   for (var i=0; i < keys.length; i++) {
     var cardDeets = localStorage.getItem(keys[i]);
     var cardDeetsObj = JSON.parse(cardDeets);
-    ideaCardListMain.push(cardDeetsObj);
+    var newCard = new Idea(cardDeetsObj.title, cardDeetsObj.body, cardDeetsObj.id, cardDeetsObj.star, cardDeetsObj.image);
+    ideaCardListMain.push(newCard);
   }
   renderIdeaCard(ideaCardListMain);
 }

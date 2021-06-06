@@ -1,10 +1,10 @@
 class Idea {
-  constructor(title, body) {
-    this.id = Date.now();
+  constructor(title, body, id, star, image) {
+    this.id = id || Date.now();
     this.title = title;
     this.body = body;
-    this.star = false;
-    this.image = 'assets/star.svg';
+    this.star = star || false;
+    this.image = image || 'assets/star.svg';
   }
 
   saveToStorage() {
