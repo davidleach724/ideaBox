@@ -11,6 +11,7 @@ var buttonSave = document.querySelector('#saveButton');
 
 
 //event listeners
+window.addEventListener('load', retrieveFromStorage);
 buttonSave.addEventListener('click', function(event) {
   generateIdeaCard(event);
 });
@@ -112,6 +113,16 @@ function searchIdea() {
     }
   }
   renderIdeaCard(filteredIdeaCards);
+}
+
+function retrieveFromStorage() {
+  // for (var i = 0; i < localStorage.length; i++) {
+    console.log(localStorage);
+    var cardDeets = JSON.parse(cardId);
+    localStorage.getItem(cardDeets);
+    ideaCardListMain.push(cardDeets);
+  // }
+  renderIdeaCard(ideaCardListMain);
 }
 
 /*
