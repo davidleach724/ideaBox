@@ -44,7 +44,6 @@ function generateIdeaCard(event) {
   var newCard = new Idea(inputTitle.value, inputDescription.value);
   ideaCardListMain.push(newCard);
   newCard.saveToStorage();
-
   renderIdeaCard(ideaCardListMain);
   clearInputFields();
 }
@@ -85,7 +84,7 @@ function deleteIdeaCard(event) {
   if (event.target.id === 'deleteIcon') {
     for (var i = 0; i < ideaCardListMain.length; i++) {
       if (ideaCardListMain[i].id === Number(closestIdea.id)) {
-        localStorage.removeItem(ideaCardListMain[i].id);
+        ideaCardListMain[i].deleteFromStorage();
         ideaCardListMain.splice(i, 1);
       }
     }
