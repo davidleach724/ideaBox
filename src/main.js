@@ -141,10 +141,22 @@ function retrieveFromStorage() {
 
 function showStarredIdeas() {
   if (buttonShowIdeas.innerText === "Show Starred Ideas") {
-    buttonShowIdeas.innerText = "Show All Ideas"
+    buttonShowIdeas.innerText = "Show All Ideas";
+    filterFavorites();
   } else if (buttonShowIdeas.innerText === "Show All Ideas") {
-    buttonShowIdeas.innerText = "Show Starred Ideas"
+    buttonShowIdeas.innerText = "Show Starred Ideas";
+    renderIdeaCard(ideaCardListMain);
   }
+};
+
+function filterFavorites() {
+  var favoriteIdeaCards = []
+  for (var i = 0; i < ideaCardListMain.length; i++) {
+    if (ideaCardListMain[i].star) {
+      favoriteIdeaCards.push(ideaCardListMain[i])
+    }
+  }
+  renderIdeaCard(favoriteIdeaCards);
 };
 
 
