@@ -100,6 +100,7 @@ function favoriteIdeaCard(event) {
     for (var i = 0; i < ideaCardListMain.length; i++) {
       if (ideaCardListMain[i].id === Number(closestIdea.id)) {
         ideaCardListMain[i].updateIdea();
+        event.preventDefault();
       }
     }
   }
@@ -122,6 +123,7 @@ function searchIdea() {
 }
 
 function retrieveFromStorage() {
+  event.preventDefault();
   var keys = Object.keys(localStorage);
 
   for (var i = 0; i < keys.length; i++) {
@@ -150,10 +152,10 @@ function showStarredIdeas() {
 };
 
 function filterFavorites() {
-  var favoriteIdeaCards = []
+  var favoriteIdeaCards = [];
   for (var i = 0; i < ideaCardListMain.length; i++) {
     if (ideaCardListMain[i].star) {
-      favoriteIdeaCards.push(ideaCardListMain[i])
+      favoriteIdeaCards.push(ideaCardListMain[i]);
     }
   }
   renderIdeaCard(favoriteIdeaCards);
