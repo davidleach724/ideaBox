@@ -8,6 +8,7 @@ var ideaCard = document.querySelector('#ideaCard');
 
 //buttons
 var buttonSave = document.querySelector('#saveButton');
+var buttonShowIdeas = document.querySelector('#showIdeasButton');
 
 //event listeners
 window.addEventListener('load', retrieveFromStorage);
@@ -23,6 +24,8 @@ ideaCard.addEventListener('click', function (event) {
 });
 
 inputSearchField.addEventListener('keyup', searchIdea);
+
+buttonShowIdeas.addEventListener('click', showStarredIdeas);
 
 //global variables
 var ideaCardListMain = [];
@@ -135,6 +138,16 @@ function retrieveFromStorage() {
   }
   renderIdeaCard(ideaCardListMain);
 }
+
+function showStarredIdeas() {
+  if (buttonShowIdeas.innerText === "Show Starred Ideas") {
+    buttonShowIdeas.innerText = "Show All Ideas"
+  } else if (buttonShowIdeas.innerText === "Show All Ideas") {
+    buttonShowIdeas.innerText = "Show Starred Ideas"
+  }
+};
+
+
 
 /*
 Edge cases
