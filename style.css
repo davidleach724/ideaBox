@@ -3,19 +3,20 @@
 }
 
 body {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
 
 main {
   display: flex;
+  flex-direction: row;
 }
 
 /* LEFT SIDEBAR */
 .container-left {
   background: #1F1F3D;
-  height: 60em;
-  width: 20vw;
+  height: 59.5em;
+  width: 23%;
 }
 
 .heading {
@@ -56,7 +57,8 @@ main {
 .container-right {
   display: flex;
   flex-direction: column;
-  width: 77vw;
+  width: 77%;
+  height: 100%;
 }
 
 /* TOP CONTAINER */
@@ -138,7 +140,8 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background: #EAEAF4;
-  height: 36em;
+  height: 33em;
+  padding-bottom: 2.5em;
 }
 
 .idea-card {
