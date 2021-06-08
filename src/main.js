@@ -1,35 +1,28 @@
 //queryselectors
-//inputs
 var inputTitle = document.querySelector('#userTitle');
 var inputDescription = document.querySelector('#userBody');
 var inputSearchField = document.querySelector('#searchField');
-var ideaBox = document.querySelector('.container-top');
+var ideaBox = document.querySelector('#containerTop');
 var ideaCard = document.querySelector('#ideaCard');
-
-//buttons
 var buttonSave = document.querySelector('#saveButton');
 var buttonShowIdeas = document.querySelector('#showIdeasButton');
 
+//global variable
+var ideaCardListMain = [];
+
 //event listeners
 window.addEventListener('load', retrieveFromStorage);
-
+ideaBox.addEventListener('keyup', buttonValidity);
+inputSearchField.addEventListener('keyup', searchIdea);
+buttonShowIdeas.addEventListener('click', showStarredIdeas);
 buttonSave.addEventListener('click', function (event) {
   generateIdeaCard(event);
 });
-
-ideaBox.addEventListener('keyup', buttonValidity);
-
 ideaCard.addEventListener('click', function (event) {
   favoriteIdeaCard(event);
   deleteIdeaCard(event);
 });
 
-inputSearchField.addEventListener('keyup', searchIdea);
-
-buttonShowIdeas.addEventListener('click', showStarredIdeas);
-
-//global variables
-var ideaCardListMain = [];
 
 //functions
 function buttonValidity() {
