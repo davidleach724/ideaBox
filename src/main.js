@@ -23,7 +23,6 @@ ideaCard.addEventListener('click', function (event) {
   deleteIdeaCard(event);
 });
 
-
 //functions
 function buttonValidity() {
   if (!inputTitle.value || !inputDescription.value) {
@@ -36,7 +35,6 @@ function buttonValidity() {
 
 function generateIdeaCard(event) {
   event.preventDefault();
-
   var newCard = new Idea(inputTitle.value, inputDescription.value);
 
   ideaCardListMain.push(newCard);
@@ -50,20 +48,21 @@ function renderIdeaCard(cards) {
   ideaCard.innerHTML = '';
 
   for (var i = 0; i < cards.length; i++) {
-    ideaCard.innerHTML += `<article id='${cards[i].id}' class='idea-card'>
-    <nav class='idea-nav'>
-      <img class='card-icon' id='favoriteIcon' src='${cards[i].image}' alt='favorite idea star'>
-      <img class='card-icon' id='deleteIcon' src='assets/delete.svg' alt='delete idea icon'>
-    </nav>
-    <div class='idea-content'>
-      <h2 class='idea-title'>${cards[i].title}</h2>
-      <p class='idea-body'>${cards[i].body}</p>
-    </div>
-    <footer class='idea-comment'>
-      <img class='card-icon' src='assets/comment.svg' alt='add comment button'>
-      <label>Comment</label>
-    </footer>
-  </article>`;
+    ideaCard.innerHTML += `
+    <article id='${cards[i].id}' class='idea-card'>
+      <nav class='idea-nav'>
+        <img class='card-icon' id='favoriteIcon' src='${cards[i].image}' alt='favorite idea star'>
+        <img class='card-icon' id='deleteIcon' src='assets/delete.svg' alt='delete idea icon'>
+      </nav>
+      <div class='idea-content'>
+        <h2 class='idea-title'>${cards[i].title}</h2>
+        <p class='idea-body'>${cards[i].body}</p>
+      </div>
+      <footer class='idea-comment'>
+        <img class='card-icon' src='assets/comment.svg' alt='add comment button'>
+        <label>Comment</label>
+      </footer>
+    </article>`;
   }
 }
 
@@ -99,19 +98,16 @@ function favoriteIdeaCard(event) {
     }
     renderIdeaCard(ideaCardListMain);
     checkForFavorites();
-    }
   }
+}
 
 function searchIdea() {
   var inputSearch = inputSearchField.value;
   var filteredIdeaCards = [];
-  console.log(inputSearch);
 
   for (var i = 0; i < ideaCardListMain.length; i++) {
-    if (
-      ideaCardListMain[i].title.includes(inputSearch) ||
-      ideaCardListMain[i].body.includes(inputSearch)
-    ) {
+    if (ideaCardListMain[i].title.includes(inputSearch) ||
+      ideaCardListMain[i].body.includes(inputSearch)) {
       filteredIdeaCards.push(ideaCardListMain[i]);
     }
   }
