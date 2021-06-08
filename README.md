@@ -25,4 +25,7 @@ The Idea Box website gives users a place to create, store, and favorite the idea
 ### [Get The Deployment Link Here]()
 
 
-### Contributor:
+### Contributors:
+[William Phelps](https://github.com/williamphelps13)
+[Maria DelSignore](https://github.com/madhaus4)
+[Dave Leach](https://github.com/davidleach724)
