@@ -18,7 +18,9 @@ The Idea Box website gives users a place to create, store, and favorite the idea
 - JavaScript
 
 ### Future Additions
-
+- The primary future addition planned for the Idea Box website would be for the user to be able to comment on their ideas.
+- By favoriting an idea the user is able to in a sense already comment on their idea, but adding the ability to additional text comments beyond whether they view the idea as a top idea or not would be beneficial.
+- It would of course be important that this functionality persists beyond a single browser session just like the ideas themselves do
 
 ### [Get The Deployment Link Here]()
 
