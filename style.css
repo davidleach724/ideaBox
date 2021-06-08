@@ -21,9 +21,9 @@ main {
 }
 
 .heading {
-  color: #E9E9F3;
   font-size: 15px;
   font-weight: 700;
+  color: #E9E9F3;
   padding: .5em;
   margin: .5em;
 }
@@ -39,19 +39,18 @@ main {
 }
 
 .starred-ideas {
-  color: #BFBFDD;
   font-size: 12px;
+  color: #BFBFDD;
   margin: 0;
 }
 
 .show-ideas-button {
-  background: #5356A4;
-  color: #E9E9F3;
   font-size: 15px;
+  color: #E9E9F3;
+  background: #5356A4;
   border: none;
   padding: .5em 1.25em .40em 1.25em;
 }
-
 
 /* RIGHT SECTION */
 .container-right {
@@ -75,9 +74,9 @@ main {
 .body-area {
   display: flex;
   flex-direction: column;
-  color: #1F1F3D;
   font-size: 12px;
   font-weight: 700;
+  color: #1F1F3D;
   width: 45%;
 }
 
@@ -98,9 +97,9 @@ textarea {
 }
 
 .save-button {
-  background: #5356A4;
-  color: #EAEAf4;
   font-size: 15px;
+  color: #EAEAf4;
+  background: #5356A4;
   border: .15em #5356A4 solid;
   border-radius: .25em;
   padding: .5em;
@@ -183,9 +182,9 @@ textarea {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: #5356A4;
-  color: #ffffff;
   font-size: 15px;
+  color: #ffffff;
+  background: #5356A4;
   border: .15em solid #1F1F3D;
   border-top: none;
   margin: 0;
