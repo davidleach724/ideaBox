@@ -21,8 +21,8 @@ main {
 }
 
 .heading {
-  font-size: 15px;
   color: #E9E9F3;
+  font-size: 15px;
   font-weight: 700;
   padding: .5em;
   margin: .5em;
@@ -32,23 +32,23 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 15vh;
   border-top: 0.15em solid #353567;
   border-bottom: .15em solid #353567;
   padding: .75em;
   margin: 0;
+  height: 15vh;
 }
 
 .starred-ideas {
-  font-size: 12px;
   color: #BFBFDD;
+  font-size: 12px;
   margin: 0;
 }
 
 .show-ideas-button {
-  font-size: 15px;
-  color: #E9E9F3;
   background: #5356A4;
+  color: #E9E9F3;
+  font-size: 15px;
   border: none;
   padding: .5em 1.25em .40em 1.25em;
 }
@@ -58,8 +58,8 @@ main {
 .container-right {
   display: flex;
   flex-direction: column;
-  width: 77%;
   height: 100%;
+  width: 77%;
 }
 
 /* TOP CONTAINER */
@@ -76,10 +76,10 @@ main {
 .body-area {
   display: flex;
   flex-direction: column;
-  width: 45%;
   color: #1F1F3D;
   font-size: 12px;
   font-weight: 700;
+  width: 45%;
 }
 
 textarea {
@@ -100,12 +100,12 @@ textarea {
 
 .save-button {
   background: #5356A4;
-  width: 45%;
   color: #EAEAf4;
-  border: .15em #5356A4 solid;
-  padding: .5em;
-  border-radius: .25em;
   font-size: 15px;
+  border: .15em #5356A4 solid;
+  border-radius: .25em;
+  padding: .5em;
+  width: 45%;
   cursor: not-allowed;
 }
 
@@ -124,15 +124,15 @@ textarea {
 
 .search-img {
   background: #1F1F3D;
-  height: 1.5em;
-  width: 1.5em;
   padding: .5em;
   margin: 0;
+  height: 1.5em;
+  width: 1.5em;
 }
 
 .search-field {
-  outline: none;
   width: 100%;
+  outline: none;
 }
 
 /* BOTTOM CONTAINER */
@@ -141,32 +141,32 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background: #EAEAF4;
-  height: 33em;
   padding-bottom: 2.5em;
+  height: 33em;
 }
 
 .idea-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 1.5em;
   height: 15em;
   width: 14em;
-  margin-top: 1.5em;
 }
 
 .idea-nav {
   display: flex;
   justify-content: space-between;
-  border-bottom: .15em solid #1F1F3D;
   background: #1F1F3D;
+  border-bottom: .15em solid #1F1F3D;
+  margin: 0;
   height: 12.5%;
   width: 100%;
-  margin: 0;
 }
 
 .idea-content {
-  border: .15em solid #1F1F3D;
   background: #ffffff;
+  border: .15em solid #1F1F3D;
   padding: .5em;
   height: 100%;
 }
@@ -176,25 +176,24 @@ textarea {
 }
 
 .idea-body {
-  margin: 0;
   font-size: 15px;
-  /* overflow: scroll; */
+  margin: 0;
 }
 
 .idea-comment {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: .15em solid #1F1F3D;
-  border-top: none;
   background: #5356A4;
   color: #ffffff;
-  margin: 0;
   font-size: 15px;
+  border: .15em solid #1F1F3D;
+  border-top: none;
+  margin: 0;
 }
 
 .card-icon {
+  padding: .10em;
   height: 1.75em;
   width: 1.75em;
-  padding: .10em;
 }
