@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>Idea Box</title>
+    <title>Document</title>
   </head>
   <body>
     <main>
@@ -18,22 +18,22 @@
         </div>
       </section>
       <section class="container-right">
-        <form class="container-top" id="containerTop">
+        <form class="container-top">
           <div class="title-area">
-            <label for="userTitle">Title</label>
+            <label for="title">Title</label>
             <textarea class="user-title" type="text" id="userTitle"></textarea>
           </div>
           <div class="body-area">
-            <label for="userBody">Body</label>
+            <label for="body">Body</label>
             <textarea class ="user-body" type="text" id="userBody"></textarea>
           </div>
-          <button class="save-button" id="saveButton" disabled>Save</button>
+          <button id="saveButton" class="save-button" disabled>Save</button>
           <div class="search-ideas-box">
             <img class="search-img" src="assets/search.svg" alt="search button">
             <input class="search-field" type="text" id="searchField" placeholder="Search Ideas" autocomplete="off" maxlength="40">
           </div>
         </form>
-        <section class="container-bottom" id="ideaCard">
+        <section id="ideaCard" class="container-bottom">
           <!-- This is where user cards are generated -->
         </section>
       </section>
