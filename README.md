@@ -13,7 +13,9 @@ The Idea Box website gives users a place to create, store, and favorite the idea
 - Since you don't want your good ideas to vanish when you close the tab the users can close their tab or end their session and be confident that the next time they return to the site their ideas will still be there
 
 ### Technologies Used
-
+- HTML
+- CSS
+- JavaScript
 
 ### Future Additions
 
