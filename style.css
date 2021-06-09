@@ -32,7 +32,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: .15em 0em .15em 0em solid #353567;
+  border-top: .15em solid #353567;
+  border-bottom: .15em solid #353567;
   padding: .75em;
   margin: 0;
   height: 15vh;
