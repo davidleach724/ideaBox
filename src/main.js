@@ -133,14 +133,14 @@ function retrieveFromStorage() {
 }
 
 function showStarredIdeas() {
-  if (buttonShowIdeas.innerText === "Show Starred Ideas") {
-    buttonShowIdeas.innerText = "Show All Ideas";
+  if (buttonShowIdeas.innerText === 'Show Starred Ideas') {
+    buttonShowIdeas.innerText = 'Show All Ideas';
     filterFavorites();
-  } else if (buttonShowIdeas.innerText === "Show All Ideas") {
-    buttonShowIdeas.innerText = "Show Starred Ideas";
+  } else if (buttonShowIdeas.innerText === 'Show All Ideas') {
+    buttonShowIdeas.innerText = 'Show Starred Ideas';
     renderIdeaCard(ideaCardListMain);
   }
-};
+}
 
 function filterFavorites() {
   var filteredIdeaCards = [];
@@ -150,16 +150,10 @@ function filterFavorites() {
     }
   }
   renderIdeaCard(filteredIdeaCards);
-};
+}
 
 function checkForFavorites() {
-  if(buttonShowIdeas.innerText === "Show All Ideas") {
+  if(buttonShowIdeas.innerText === 'Show All Ideas') {
     filterFavorites();
   }
 }
-
-/*
-Edge cases
-- verify the 'title' and 'body' have information
---- error checking function will have a return to prevent additional methods from firing
-*/
