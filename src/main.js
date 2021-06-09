@@ -118,14 +118,14 @@ function retrieveFromStorage() {
   var keys = Object.keys(localStorage);
 
   for (var i = 0; i < keys.length; i++) {
-    var cardDeets = localStorage.getItem(keys[i]);
-    var cardDeetsObj = JSON.parse(cardDeets);
+    var cardDetails = localStorage.getItem(keys[i]);
+    var cardInfo = JSON.parse(cardDetails);
     var newCard = new Idea(
-      cardDeetsObj.title,
-      cardDeetsObj.body,
-      cardDeetsObj.id,
-      cardDeetsObj.star,
-      cardDeetsObj.image
+      cardInfo.title,
+      cardInfo.body,
+      cardInfo.id,
+      cardInfo.star,
+      cardInfo.image
     );
     ideaCardListMain.push(newCard);
   }
